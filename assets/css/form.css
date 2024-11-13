@@ -1,0 +1,151 @@
+/*
+  Form Styles
+*/
+
+/*
+  Tags
+*/
+aside {
+    background: linear-gradient(
+      var(--light-accent), 
+      var(--circle-color), 
+      var(--dark-accent)
+    );
+    clip-path: circle(20rem at center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  aside, 
+  section {
+    flex: 1 1 50%;
+  }
+  
+  aside > h2 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 1px var(--dark-accent);
+  }
+  
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+  }
+  
+  form > *:not(label) {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  input[type=submit] {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  input[type=submit]:active {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+    background-color: var(--dark-accent);
+  }
+  
+  input[type=submit]:hover {
+    border-style: inset;
+    background-color: var(--dark-accent-action);
+  }
+  
+  input,
+  textarea {
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 1rem;
+    background-color: var(--light-accent);
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+
+  section {
+    height 100%;
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    position: center;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-left: double 1rem;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 150px;
+    width: 400px;
+  }
+  
+  /*
+    Classes
+  */
+  .circle {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--circle-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin: 50px;
+  }
+
+  .container {
+  }
+
+  .dark section {
+    border-left: solid .5rem var(--disabled);
+  }
+
+  /*
+    IDs
+  */
+  #error {
+    color: var(--error);
+    opacity: .75;
+    position: absolute;
+    bottom: -2rem;
+  }
+
+  #blogForm div {
+    margin-bottom: 1rem;
+  }
+
+  #blogForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  #blogForm input[type="text"],
+  #blogForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  

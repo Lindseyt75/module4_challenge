@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My First Blog</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+
+    <script defer src="assets/js/logic.js" type="text/javascript"></script>
+    <script defer src="assets/js/form.js" type="text/javascript"></script>
+  </head>
+<body>
+  <!-- TODO: Create landing page elements -->
+    <header>
+      <h1>My First Blog</h1>
+      <!-- <button id="createPost">Create a Post</button> -->
+      <button id="toggle" class="toggle">☀️</button>
+    </header>
+    <main>
+      <div class="container">
+        <aside>
+          <div class="circle"><h1>My First Blog</h1></div>
+        </aside>
+      </div>
+      <section>
+        <form id="blogForm">
+          <h3>What's on your mind?</h3>
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Username" required/>
+        </div>
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" placeholder="Title" required/>
+        </div>
+        <div>
+          <label for="content">Content:</label>
+          <textarea id="content" placeholder="Content" required></textarea>
+        </div>
+        <p id="error" style="color: var--error;"></p>
+        <button type="submit">Submit</button>
+        </form>
+      </section>
+</main>
+
+</body>
+<footer>
+  <button id="post" onclick="window.location.href='blog.html'">Blog Post</button>
+  <p>&copy; 2024 My First Blog</p>
+</footer>
+</html>
